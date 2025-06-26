@@ -1,0 +1,167 @@
+body {
+  font-family: Arial, sans-serif;
+  background: linear-gradient(to bottom right, #eef2f3, #8e9eab);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin: 0;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.calculator-container {
+  background-color: #1e1e2f;
+  padding: 20px;
+  border-radius: 12px;
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.25);
+  max-width: 400px;
+  width: 100%;
+  color: white;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.calculator-header {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 10px;
+}
+
+#display {
+  background: #2a2a3f;
+  padding: 10px;
+  min-height: 40px;
+  font-size: 1.2em;
+  border-radius: 6px;
+  margin-bottom: 10px;
+  overflow-x: auto;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+#history {
+  font-size: 0.8em;
+  margin-bottom: 5px;
+  color: #a9a9b8;
+  min-height: 30px;
+}
+
+.buttons {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 10px;
+}
+
+.buttons button,
+.converter button {
+  padding: 12px;
+  font-size: 1em;
+  border: none;
+  border-radius: 8px;
+  background-color: #3a3a5a;
+  color: white;
+  cursor: pointer;
+  transition: background-color 0.2s ease, transform 0.1s ease;
+}
+
+.buttons button:hover,
+.converter button:hover {
+  background-color: #57577d;
+}
+
+.buttons button:active,
+.converter button:active {
+  transform: scale(0.95);
+  background-color: #6b6b9e;
+}
+
+.dropdown {
+  background: #2a2a3f;
+  border: 1px solid #444;
+  border-radius: 8px;
+  margin-top: 10px;
+  padding: 10px;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.dropdown-item {
+  padding: 8px;
+  cursor: pointer;
+  border-bottom: 1px solid #444;
+}
+
+.dropdown-item:last-child {
+  border-bottom: none;
+}
+
+.dropdown-item:hover {
+  background-color: #444;
+  font-weight: bold;
+}
+
+.hidden {
+  display: none;
+}
+
+.converter {
+  margin-top: 15px;
+  background-color: #2a2a3f;
+  padding: 15px;
+  border-radius: 8px;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.converter input,
+.converter select {
+  width: calc(50% - 5px);
+  margin-right: 10px;
+  margin-bottom: 10px;
+  padding: 8px;
+  font-size: 1em;
+  border-radius: 5px;
+  border: none;
+}
+
+.converter input[type="number"]::-webkit-outer-spin-button,
+.converter input[type="number"]::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+.light-mode {
+  background: #fefefe;
+  color: #000;
+}
+
+.light-mode .calculator-container {
+  background-color: #ffffff;
+  color: #000;
+}
+
+.light-mode #display {
+  background: #f0f0f0;
+  color: #000;
+}
+
+.light-mode .buttons button,
+.light-mode .converter button {
+  background-color: #e0e0e0;
+  color: #000;
+}
+
+.light-mode .buttons button:hover,
+.light-mode .converter button:hover {
+  background-color: #d0d0d0;
+}
+
+.light-mode .dropdown {
+  background: #f0f0f0;
+  color: #000;
+  border-color: #ccc;
+}
+
+.light-mode .dropdown-item:hover {
+  background-color: #ddd;
+}
+
+.light-mode .converter {
+  background: #f7f7f7;
+}
