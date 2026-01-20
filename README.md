@@ -1,2 +1,2 @@
 # Task 
-These are the task given by the #CodeAlpha to complete the internship.
+These are the task done in the summer vacation.
